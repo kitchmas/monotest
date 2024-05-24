@@ -1,5 +1,5 @@
 {
-  "name": "libs",
+  "name": "@mono/libs",
   "private": true,
   "version": "0.0.0",
   "type": "module",

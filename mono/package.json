@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "eslint-plugin-import": "^2.29.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@mono/stores": "*"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
@@ -24,5 +26,8 @@
     "eslint-plugin-react-refresh": "^0.4.6",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
