@@ -4,7 +4,7 @@ import {HomeScreen} from "./modules/HomeScreen.tsx";
 function App() {
     return (
         <>
-            <h1>TITANIUM</h1>
+            <h1>TITANIUM 2</h1>
             <div className="card">
                 <HomeScreen />
             </div>
