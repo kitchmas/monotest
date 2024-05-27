@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "//": "runs changes sine master/main and recurseivly runs depenecies of those workspaces changed",
-    "build-branch-with-deps": "yarn workspaces foreach --since -R run test",
+    "build-branch-with-deps": "yarn workspaces foreach --since -R run build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "vitest"
