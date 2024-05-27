@@ -7,9 +7,10 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "//": "runs changes sine master/main and recurseivly runs depenecies of those workspaces changed",
-    "build-branch-with-deps":"yarn workspaces foreach --since -R run build",
+    "build-branch-with-deps": "yarn workspaces foreach --since -R run test",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest"
   },
   "dependencies": {
     "@mono/stores": "*",
@@ -26,8 +27,11 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "glob": "^10.4.1",
+    "path": "^0.12.7",
     "typescript": "^5.2.2",
-    "vite": "^5.2.0"
+    "vite": "^5.2.0",
+    "vitest": "^1.6.0"
   },
   "workspaces": [
     "packages/*"
