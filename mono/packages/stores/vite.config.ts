@@ -1,15 +1,20 @@
 import { defineConfig } from "vite"
-import { glob } from "glob"
-// @ts-ignore
-import path from 'path';
+import dts from "vite-plugin-dts";
+import {fileURLToPath, URL} from "url";
 
 export default defineConfig({
+        plugins: [
+            dts({
+                insertTypesEntry: true,
+
+            }),
+        ],
     build: {
         lib: {
        // @ts-ignore
-            entry: glob.sync( 'src/**/**.ts').map(file => path.resolve(__dirname, file)) ,
+            entry:fileURLToPath(new URL("./src/index.ts", import.meta.url)),
             name:"@mono/stores",
-        },
+            fileName:"index",
+        }
     },
-
 });

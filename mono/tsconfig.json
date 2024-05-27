@@ -22,7 +22,7 @@
     "baseUrl": ".",
     "paths": {
       "@mono/libs": ["packages/libs/*"],
-      "@mono/stores": ["packages/stores/*"]
+      "@mono/stores": ["packages/stores/src/index.ts"]
     }
   },
   "include": ["src"],

@@ -1,5 +1,5 @@
 import {useRef} from "react";
-import {RootStore} from "@mono/stores/src/RootStore.ts";
+import {RootStore} from "@mono/stores";
 
 export const HomeScreen = () => {
     const rootStore = useRef(new RootStore());
